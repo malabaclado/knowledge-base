@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Welcome to my digital space!
 date: 4/30/2026
 ---
 
-Welcome to my digital space! - Mark
+*This website is still a work in progress.* -Mark
