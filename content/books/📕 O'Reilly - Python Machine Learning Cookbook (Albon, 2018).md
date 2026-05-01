@@ -5,8 +5,6 @@ creation-date: Thursday 7th July 2022
 last-modified-date: Thursday 7th July 2022 13:56:34
 ---
 
-# O'Reilly - Python Machine Learning Cookbook (Albon, 2018)
-
 ## 9. Dimensionality Reduction Using Feature Extraction
 - The goal of feature extraction for dimensionality reduction is to transform the set of features (the attributes of the data) such that we end up with a new set while still keeping the underlying information. 
 - ### Reducing features Using Principal Components
