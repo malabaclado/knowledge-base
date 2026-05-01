@@ -1,2 +1,3 @@
 - [TickTick MCP](https://help.ticktick.com/articles/7438129581631995904)
 - [TickTick Developer](https://developer.ticktick.com/docs#/openapi) - API Guide
+- [Eilleen's e-Notebook](https://quartz.eilleeenz.com/2026-development) - inspiring digital garden also made with quartz
