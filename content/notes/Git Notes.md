@@ -1,5 +1,5 @@
 ---
-title: Git Quick Notes
+title: git
 ---
 **Git** is a distributed **version control system** that tracks changes in your source code during software development.
 

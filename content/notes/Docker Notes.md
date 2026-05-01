@@ -1,5 +1,5 @@
 ---
-title: Docker Quick Notes
+title: docker
 ---
 
 **Docker** is a platform that allows you to package an application and all of its requirements into a single unit called a **container**.
