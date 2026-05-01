@@ -1,6 +1,6 @@
 ---
+title: O'Reilly - Python Machine Learning Cookbook (Albon, 2018)
 tags: type/book
-alias:
 creation-date: Thursday 7th July 2022
 last-modified-date: Thursday 7th July 2022 13:56:34
 ---
