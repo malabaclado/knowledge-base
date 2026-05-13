@@ -1,3 +1,7 @@
 - [TickTick MCP](https://help.ticktick.com/articles/7438129581631995904)
 - [TickTick Developer](https://developer.ticktick.com/docs#/openapi) - API Guide
-- [Eilleen's e-Notebook](https://quartz.eilleeenz.com/2026-development) - inspiring digital garden also made with quartz
+
+quartz/digital garden inspirations
+- [Eilleen's e-Notebook](https://quartz.eilleeenz.com/2026-development) 
+- [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
+- [About this knowledge garden](https://notes.asterhu.com/)
