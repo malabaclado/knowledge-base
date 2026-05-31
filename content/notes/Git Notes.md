@@ -15,7 +15,7 @@ title: git
 > [!info]
 > The sections are arranged in order of recently added.
 
-# Useful Aliases
+ # Useful Aliases
 
 Add these to your `~/.gitconfig` under `[alias]`:
 
@@ -124,17 +124,17 @@ Interactive rebase actions
 | `git stash push -u`               | Stash including untracked files    |
 
 # Undo & Reset
-|Command|Description|
-|---|---|
-|`git restore <file>`|Discard changes in working directory|
-|`git restore --staged <file>`|Unstage a file (keep changes)|
-|`git reset HEAD~1`|Undo last commit (keep changes staged)|
-|`git reset --soft HEAD~1`|Undo last commit (keep changes staged)|
-|`git reset --mixed HEAD~1`|Undo last commit (keep changes unstaged)|
-|`git reset --hard HEAD~1`|Undo last commit (**discard changes**)|
-|`git reset --hard origin/main`|Reset to match remote exactly|
-|`git revert <commit>`|Create a new commit that undoes a commit|
-|`git checkout -- <file>`|Discard changes (older syntax)|
+| Command                        | Description                              |
+| ------------------------------ | ---------------------------------------- |
+| `git restore <file>`           | Discard changes in working directory     |
+| `git restore --staged <file>`  | Unstage a file (keep changes)            |
+| `git reset HEAD~1`             | Undo last commit (keep changes staged)   |
+| `git reset --soft HEAD~1`      | Undo last commit (keep changes staged)   |
+| `git reset --mixed HEAD~1`     | Undo last commit (keep changes unstaged) |
+| `git reset --hard HEAD~1`      | Undo last commit (**discard changes**)   |
+| `git reset --hard origin/main` | Reset to match remote exactly            |
+| `git revert <commit>`          | Create a new commit that undoes a commit |
+| `git checkout -- <file>`       | Discard changes (older syntax)           |
 
 # Stage and Commit
 |Command|Description|

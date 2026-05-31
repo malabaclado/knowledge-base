@@ -1,5 +1,5 @@
 ---
-title: sqlite notes
+title: sqlite
 ---
 
 Data types in sqlite: https://sqlite.org/datatype3.html

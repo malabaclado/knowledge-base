@@ -1,5 +1,5 @@
 ---
-title: sql notes
+title: sql
 ---
 # Data Definition (DDL)
 
