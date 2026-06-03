@@ -100,15 +100,11 @@ FROM employees_db;
 	- create a temporary table
 	- increase readability within your code
 
-## Key Terms
-See: [SQL Subqueries & Temporary Tables (udacity.com)](https://learn.udacity.com/nanodegrees/nd104-ent-bmann/parts/9b7bb3f3-cf90-4511-bdfd-8ab4944b31d4/lessons/ls0003/concepts/6deb8196-6710-400b-bc31-f3b3cf20892a)
-#todo Create a flashcard 
-
 # SQL Data Cleaning
 - Data cleaning is a foundational skill for a data scientist
 
 ## Real-world Applications
-- Q: What is data cleaning:
+- Q: What is data cleaning?
 	- A: Manipulating data to make it usable for analysis.
 	- A: The task of cleaning up raw data to make it usable and ready for analysis
 - Q: When to use data cleaning techniques?
