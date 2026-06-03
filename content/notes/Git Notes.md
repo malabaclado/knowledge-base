@@ -15,6 +15,7 @@ title: git
 > [!info]
 > The sections are arranged in order of recently added.
 
+
  # Useful Aliases
 
 Add these to your `~/.gitconfig` under `[alias]`:
@@ -34,6 +35,17 @@ Add these to your `~/.gitconfig` under `[alias]`:
     pushf = push --force-with-lease
     prune-merged = !git branch --merged | grep -v main | xargs git branch -d
 ```
+
+
+**How I set up an alias to quickly update my knowledge base**
+```
+git config --global alias.publish "!f() { git add -A && git commit -m \"\${1:-update}\" && git push; }; f"
+
+
+-- to update my knowledge base
+git publish
+```
+
 
 | Alias                | What it does                         |
 | -------------------- | ------------------------------------ |
@@ -193,4 +205,4 @@ Interactive rebase actions
 
 References
 - [atryx/git-cheatsheet: Git commands cheat sheet — branches, merges, rebases, stashes, undos, and aliases every developer needs (2026)](https://github.com/atryx/git-cheatsheet)
-- 
+- [[Git and GitHub Crash Course for Beginners]]

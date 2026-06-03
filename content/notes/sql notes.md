@@ -209,4 +209,3 @@ FROM employees_db;
 [SQL Full Course for Beginners (30 Hours) – From Zero to Hero - YouTube](https://www.youtube.com/watch?v=SSKVgrwhzus&t=23640s)
 
 
-I've written an update.
