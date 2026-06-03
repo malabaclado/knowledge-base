@@ -207,3 +207,6 @@ FROM employees_db;
 **Common Use Case:** Finding records that are above or below an average, or matching a specific calculated metric.
 # References
 [SQL Full Course for Beginners (30 Hours) – From Zero to Hero - YouTube](https://www.youtube.com/watch?v=SSKVgrwhzus&t=23640s)
+
+
+I've written an update.
