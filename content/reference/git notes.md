@@ -3,6 +3,7 @@ title: git
 ---
 # Related notes
 - [[Git is a version control system]]
+- [[Git and GitHub Crash Course for Beginners]]
 
 > [!info]
 > The sections are arranged in order of recently added.
@@ -198,6 +199,5 @@ Interactive rebase actions
 |`git config user.name`|Show a specific setting|
 
 
-# Notes
+# External References
 - [atryx/git-cheatsheet: Git commands cheat sheet — branches, merges, rebases, stashes, undos, and aliases every developer needs (2026)](https://github.com/atryx/git-cheatsheet)
-- [[Git and GitHub Crash Course for Beginners]]
