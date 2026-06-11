@@ -3,6 +3,7 @@ title: sqlite
 ---
 
 Data types in sqlite: https://sqlite.org/datatype3.html
+Reference site: https://www.sqlitetutorial.net/
 
 **Basic connection template:**
 ```python
