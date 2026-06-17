@@ -1,3 +1,6 @@
+- [data science cheat sheets (Google Drive)](https://drive.google.com/drive/folders/1muLmkfiTaRXB7hoja11azWuEo-x96pvj?usp=sharing)
+
+TickTick - Task Management
 - [TickTick MCP](https://help.ticktick.com/articles/7438129581631995904)
 - [TickTick Developer](https://developer.ticktick.com/docs#/openapi) - API Guide
 
