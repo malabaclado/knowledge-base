@@ -1,5 +1,4 @@
 - [data science cheat sheets (Google Drive)](https://drive.google.com/drive/folders/1muLmkfiTaRXB7hoja11azWuEo-x96pvj?usp=sharing)
-added some details
 
 TickTick - Task Management
 - [TickTick MCP](https://help.ticktick.com/articles/7438129581631995904)
