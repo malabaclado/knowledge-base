@@ -1,0 +1,17 @@
+- [[Discrete Models]] (Lec Sep 22)
+- [[Solutions and Stability of Difference Equations]] (Lec Sep 24)
+- [[Logistic Map]]
+- [[SIR Model]] (Lec Oct 6)
+- [[Data Fitting]] (Lec Oct 13)
+- [[Quadratic Regression]] Oct 20
+- [[Linear Differential Equations]]
+- [[Nonlinear Differential Equations]]
+- [[Ecological and Biological Models]]
+- [[Euler Runge-Kuta]]
+- [[Pendulum Motion]]
+- [[Macroeconomic Models]]
+- [[Models for Monopolistic and Duopolistic Competition]]
+- [[Omicron Webinar]]
+---
+- [[SIR Model for Disease Spread]]
+

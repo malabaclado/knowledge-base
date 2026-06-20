@@ -1,0 +1,5 @@
+- [tricollet/Python-for-Data-Science-and-Machine-Learning-Bootcamp: Python for Data Science and Machine Learning Bootcamp - Self-paced bootcamp (Udemy)](https://github.com/tricollet/Python-for-Data-Science-and-Machine-Learning-Bootcamp/tree/master)
+- **Python Foundations (Self-learning)**
+	- [DareData/lp-foundations: Foundations Learning Path is a self-study course to help you become a better Python programmer.](https://github.com/DareData/lp-foundations/tree/main)
+- **NeuralNine Python Self-Study Curriculum**
+	- [NeuralNine/python-curriculum: A self-study curriculum for learning Python in four weeks.](https://github.com/NeuralNine/python-curriculum)

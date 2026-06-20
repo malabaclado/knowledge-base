@@ -1,0 +1,26 @@
+
+### Machine Learning Models
+- Supervised
+	- Regression
+		- Linear Regression
+			- Multiple Linear Regression (finding plane for best fit)
+			- Polynomial Regression (finding a curve for best fit)
+		- Decision Tree (uses nodes)
+		- Random Forest (ensemble learning using trees, majority wins model) 
+		- Neural Network (Input - Hidden Output)
+	- Classification: Output is discrete
+		- Logistic Regression: Used to model probability of finite number of outcomes
+		- Support Vector Machine:
+		- Naive Bayes
+		- Decision Tree, Random Forest, Neural Network
+- Unsupervised: Used to draw inferences and finr patterns
+	- [[Cluster Analysis]]: grouping of data points
+		- Common Techniques:
+			- K-means
+			- Hierarchical
+			- Mean shift
+			- Density Based	
+	- Dimensionality Reduction: Process of reducing dimensions of your feature set
+		- either feature elimination or feature extraction
+		- common method:
+			- Principal Component Analysis

@@ -9,5 +9,4 @@ quartz/digital garden inspirations
 - [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
 - [About this knowledge garden](https://notes.asterhu.com/)
 
-
 [datanerd.tech | Research & Insights](https://datanerd.tech/research)

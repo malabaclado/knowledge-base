@@ -1,0 +1,11 @@
+{{content}}
+
+---
+See also: [[{{fromTitle}}]]
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"type":"text","text":"# Analytics","id":"6479489ed54fe414","x":-732,"y":-95,"width":250,"height":60},
+		{"type":"file","file":"Seedbox/Data Value Chain.md","id":"02f579a9429a557c","x":200,"y":-385,"width":600,"height":640},
+		{"type":"file","file":"Seedbox/APEC Project DARE.md","id":"7e7111b976d9fad2","x":-80,"y":400,"width":400,"height":400},
+		{"id":"e120b1c1b50906eb","x":-1400,"y":1246,"width":400,"height":400,"type":"file","file":"Seedbox/DELTA+ Model and the Organizational Maturity Model.md"},
+		{"id":"468d8f98332956e8","x":-240,"y":1246,"width":400,"height":400,"type":"file","file":"Seedbox/AAP Professional Maturity Model.md"},
+		{"id":"47e00094c277e1be","x":-1400,"y":1840,"width":400,"height":400,"type":"file","file":"Seedbox/Organizational Strategy Road Map for Analytics.md"},
+		{"type":"file","file":"Seedbox/Major Analytics Job Families.md","id":"83fed902d0c3f12b","x":-1800,"y":-465,"width":400,"height":400},
+		{"id":"5d24b3c1f6119548","x":-1800,"y":120,"width":400,"height":400,"type":"file","file":"Seedbox/Analytics for the People and the Analytics Ecosystem of the Philippines.md"},
+		{"type":"text","text":"**Analytics** progresses data along its value chain, with the purpose of delivering the right decision support to the right people and digital processes at the right time, for the greater good.","id":"77c9516c31288e04","x":-962,"y":-569,"width":711,"height":184},
+		{"type":"file","file":"Seedbox/APEC Analytics Competencies.md","id":"c79e4fd7deb598e1","x":-806,"y":400,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"2e4fba416cc174c1","fromNode":"6479489ed54fe414","fromSide":"top","toNode":"77c9516c31288e04","toSide":"bottom","label":"definition"},
+		{"id":"341311ce52efb2e9","fromNode":"6479489ed54fe414","fromSide":"right","toNode":"02f579a9429a557c","toSide":"left","label":"moves data along the "},
+		{"id":"9bf9028cdd5104d8","fromNode":"6479489ed54fe414","fromSide":"left","toNode":"83fed902d0c3f12b","toSide":"right"},
+		{"id":"e85fa83ff4cd11e2","fromNode":"6479489ed54fe414","fromSide":"bottom","toNode":"c79e4fd7deb598e1","toSide":"top"},
+		{"id":"2c096325f0b93fdd","fromNode":"7e7111b976d9fad2","fromSide":"left","toNode":"c79e4fd7deb598e1","toSide":"right"},
+		{"id":"2edb74493db1848a","fromNode":"c79e4fd7deb598e1","fromSide":"bottom","toNode":"468d8f98332956e8","toSide":"top","label":"provides framework for\n personal growth"},
+		{"id":"aa10463d91c9e1e8","fromNode":"c79e4fd7deb598e1","fromSide":"bottom","toNode":"e120b1c1b50906eb","toSide":"top","label":"provides framework for\n organizational growth"},
+		{"id":"f80e648a75fde3a1","fromNode":"6479489ed54fe414","fromSide":"left","toNode":"5d24b3c1f6119548","toSide":"right"},
+		{"id":"6f3517282cf57212","fromNode":"e120b1c1b50906eb","fromSide":"bottom","toNode":"47e00094c277e1be","toSide":"top"}
+	]
+}
