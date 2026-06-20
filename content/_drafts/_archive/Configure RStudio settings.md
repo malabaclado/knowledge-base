@@ -1,0 +1,42 @@
+  
+Things to setup in RStudio:
+- [ ] **Appearance and Theme**:
+    - [ ] Choose a theme that is easy on the eyes for long coding sessions.
+    - [ ] You can select themes like "Cobalt", "Solarized Dark", or "Tomorrow Night" from Tools > Global Options > Appearance > Editor Theme.
+- [ ] **Editor Preferences**:
+    - [ ] Set a reasonably large font size for better readability.
+    - [ ] Enable line numbers for easy navigation.
+    - [ ] Enable code completion and auto-indentation.
+- [ ] **Code Styling**:
+    - [ ] Install the `styler` package and configure it to automatically format your code according to consistent styling guidelines.
+- [ ] **Environment and Workspace**:
+    - [ ] Configure the behavior of the global environment.
+    - [ ] Decide whether to save workspace on exit.
+- [ ] **Version Control**:
+    - [ ] If using version control (e.g., Git), integrate it with RStudio by configuring the Git/SVN options.
+- [ ] **Keyboard Shortcuts**:
+    - [ ] Familiarize yourself with useful keyboard shortcuts to speed up your workflow. You can find these in Tools > Keyboard Shortcuts Help.
+- [ ] **Package Management**:
+    - [ ] Install the `renv` package to create isolated project-specific R environments. This helps manage package dependencies.
+- [ ] **Plots and Graphics**:
+    - [ ] Configure the default device for plots. You can choose between "Plots Pane" or "Quartz" (macOS) for better visualization.
+- [ ] **Working Directory**:
+    - [ ] Set your working directory to the location where you'll save and access your projects.
+    - [ ] Create project directories to keep your files organized.
+- [ ] **Code Snippets**:
+    - [ ] Create custom code snippets for common tasks to save time.
+- [ ] **Git Integration**:
+    - [ ] Configure Git integration to easily manage version control for your projects.
+- [ ] **Shortcuts for Running Code**:
+    - [ ] Use Ctrl+Enter to run selected lines or sections of code in the console.
+    - [ ] Use Ctrl+Shift+Enter to run the entire script.
+- [ ] **RMarkdown Integration**:
+    - [ ] If using RMarkdown for reports and documents, configure the rendering options according to your preferences.
+- [ ] **Custom R Profile**:
+    - [ ] Create a custom `.Rprofile` file to set environment variables, customize startup options, and define useful functions.
+- [ ] **Package Installations**:
+    - [ ] Configure RStudio to install packages from CRAN, GitHub, or other sources as needed.
+- [ ] **Viewer Pane**:
+    - [ ] Enable the viewer pane for quick previews of HTML, PDF, and other outputs.
+- [ ] **Performance Settings**:
+    - [ ] If you're working with large datasets, consider adjusting the memory settings in RStudio to accommodate your needs.

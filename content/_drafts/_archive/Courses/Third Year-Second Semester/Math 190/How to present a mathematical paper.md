@@ -1,0 +1,39 @@
+- The purpose of the talk should always be a balance of **to inform** and **to attract**
+- A mathematical talk should be **clear** (avoid vagueness) and **understandable** (simple and on point)
+- **Keep it simple** 
+	- *less is more* - don't make too many slides, sometimes it is not necessary to provide all details in your slides.
+	- give **concrete and simple examples** (or non-examples)
+	- **do not show computations** in public
+- **Prepare and organize**
+	- make sure to **study the topic**
+	- **plan the content** of the talk: tell a story
+	- **break down your talk** into sections
+	- **adjust to the level of your audience**
+	- you **may start with a hook**: provide background. history, applications, motivation and placing te subject in a greater context
+	- **practice** (if you want)
+	- In conferences, **to run over time is rude**.
+- **On slides**
+	- the **slide should only be a reinforcement **to the speaker's message.
+	- **avoid too much text**: use bullets and phrases (don't do full sentences)
+	- at most 6-10 lines of text
+	- use text formatting to break monotony of text
+- For the Speaker
+	- **present with energy** and (some) animation
+	- **be mindful of your pacing**: don't be too slow or too monotonous
+	- face the audience
+	- **avoid long formulas**, compromise: **describe**
+	- **avoid annoying mannerisms**
+	- **use pointer** to highlight
+- **Other useful tips**
+	- **when to include an outline of the talk?**
+		- for short talks (ie. 15 mins), you may not include an outline as it takes away too much of your valuable time
+	- you may **either make a script or do impromptu**
+		- a useful technique may be to memorize the opening sentence and freestyle on the other sentences
+	- **on questions**: be honest when you don't know the answer
+	- **audience takeaway** (things you want to highlight): general area, specific problem and main message
+
+
+Advantages of using Beamer class in LaTeX
+- auto table of content
+- usable themes
+- output is pdf

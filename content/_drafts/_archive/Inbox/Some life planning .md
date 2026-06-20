@@ -1,0 +1,63 @@
+---
+tags:
+alias:
+creation-date: Thursday 14th September 2023
+---
+
+- # Time Management Breakdown
+	- ## Regular timeblocking
+		- Sleep: 11 PM to 7 AM 
+		- *Breakfast at 7:30 AM*
+		- Work hours: (3 hours work into 4 hours time)
+			- 8:30 AM to 12:30 PM
+			- *Lunch at 12:30 PM*
+			- 1:30 PM to 5:30 PM 
+			- *Coffee at 2 PM*
+			- *DInner at 5:30 PM*
+		- Pru Business: 6 PM to 8 PM
+		- *Late night snack at 9 PM*
+		- Upskillling: 8 PM to 10 PM 
+	- ## Tomorrow's Schedule - Sept 15.
+		- Job hunting efforts: 4 hours
+			- Answer and practice interview questions (1 hour)
+			- Refine portfolio (1 hour)
+			- Turn into portfolio: SP503 Project (1 hour)
+		- Project SPARTA: 4 hours
+			- SP602 Case Studies (1 hour)
+			- SP702 Module 2 & 3
+		- PRU: 2 hrs
+			- Planning (1 hour)
+			- Immediate action (1 hour)
+		- Upskilling: 2 hours
+			- 
+	- Work: 8 hours/day
+		- *While not working:*
+			- Job hunting: 4 hours
+				- Portfolio enhancement
+				- Practice interview questions
+				- Review math subjects
+			- Project SPARTA: 4 hours
+	- Upskilling: 2 hours/day
+		- DataCamp
+		- WorldQuant
+		- Tableau
+	- PRU Business: 2 hours/day
+	- Others
+		- Morning routine: 1.5 hours
+		- Lunch: 1 hour
+		- Dinner: 1 hour
+		- Sleep: 8 hours
+		- Remaining: 0.5 hours
+---
+PRU Essential Tasks
+- Habit:
+	- Socmed Presence
+		- Daily story
+		- Daily post/engagement
+		- Presence on FB groups
+	- Prospecting & approaching
+		- Add prospects
+		- Approach leads 
+	- Upskill
+		- Read books
+		- Watch on PruExpert

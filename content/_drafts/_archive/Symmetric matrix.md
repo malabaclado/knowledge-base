@@ -1,0 +1,2 @@
+In linear algebra, a symmteric matrix is a square matrix that is equal to its transpose. Formally,
+$$A \text{ is symmetric } \iff A=A^{T}$$Because equal matrices have equal dimensions, only square matrices can be symmetric.

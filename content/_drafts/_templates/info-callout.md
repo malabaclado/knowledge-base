@@ -1,0 +1,2 @@
+> [!info]
+> Aliases: "info"

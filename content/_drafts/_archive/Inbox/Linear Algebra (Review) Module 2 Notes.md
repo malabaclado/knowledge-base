@@ -1,0 +1,5 @@
+- Definition of linear combination
+- Definition of span of a vector
+- Theorem: The span of a vector space is a subspace of it.
+- Definition of spanning set
+- Definition of linear independence

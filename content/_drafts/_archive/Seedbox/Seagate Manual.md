@@ -1,0 +1,1 @@
+[Toolkit User Manual - Mirror Activity (seagate.com)](https://www.seagate.com/manuals/software/toolkit/mirror-folders/)

@@ -1,0 +1,3 @@
+
+[[Cournot Model]]
+[[Stackelberg Model]]
