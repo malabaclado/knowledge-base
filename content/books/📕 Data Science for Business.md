@@ -40,3 +40,8 @@ For example, a map is a model of the physical world. It abstracts away a tremend
 
 In data science, a **predictive model** is a formula for estimating the unknown value of interest: the target. The formula could be mathematical, or it could be a logical statement such as a rule. Often it is a hybrid of the two. Given our division of supervised data mining into classification and regression, we will consider classification models (and class-probability estimation models) and regression models.
 
+**Supervised learning** is model creation where the model describes a relationship between a set of selected variables (attributes or features) and a predefined variable called the target variable.
+
+The creation of models from data is known as **model induction**. **Induction** is a term from philosophy that refers to generalizing from specific cases to general rules (or laws, or truths).
+
+**Entropy** is a measure of disorder that can be applied to a set, such as one of our individual segments. Consider that we have a set of properties of members of the set, and each member has one and only one of the properties. In supervised segmentation, the mem ber properties will correspond to the values of the target variable. Disorder corresponds to how mixed (impure) the segment is with respect to these properties of interest. So, for example, a mixed up segment with lots of write-offs and lots of non-write-offs would have high entropy.
