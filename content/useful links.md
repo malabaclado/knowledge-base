@@ -10,3 +10,6 @@ quartz/digital garden inspirations
 - [About this knowledge garden](https://notes.asterhu.com/)
 
 [datanerd.tech | Research & Insights](https://datanerd.tech/research)
+
+
+[Get Started With Intel® Distribution for Python*](https://www.intel.com/content/www/us/en/developer/articles/technical/get-started-with-intel-distribution-for-python.html)
