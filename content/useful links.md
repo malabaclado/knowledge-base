@@ -1,4 +1,6 @@
-- [data science cheat sheets (Google Drive)](https://drive.google.com/drive/folders/1muLmkfiTaRXB7hoja11azWuEo-x96pvj?usp=sharing)
+- [data science cheat sheets (Google Drive)](https://drive.google.com/drive/folders/1muLmkfiTaRXB7hoja11azWuEo-x96pvj?usp=sharing) - a collection of useful reference sheets for data science
+- [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - a collection of useful MCP servers on github
+
 
 TickTick - Task Management
 - [TickTick MCP](https://help.ticktick.com/articles/7438129581631995904)
