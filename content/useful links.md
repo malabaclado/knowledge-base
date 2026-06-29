@@ -20,4 +20,4 @@ quartz/digital garden inspirations
 public apis list
 - [public-api-lists/public-api-lists: A curated list of free public APIs across 48 categories — searchable, community-maintained, with a free JSON API.](https://github.com/public-api-lists/public-api-lists)
 - [BuiltWitAI/free-apis-for-projects: ✨ A curated list of fun and useful free APIs for developers, perfect for practice, building portfolio projects, or just for fun! Focus on APIs with simple access (no credit card needed for free tier).](https://github.com/BuiltWitAI/free-apis-for-projects)
-- 
+- [40 Free APIs for Your Next Project 2026 - Images, Weather, Finance, AI & More](https://www.mergesociety.com/latest/list-of-free-apis)
