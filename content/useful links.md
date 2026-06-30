@@ -24,4 +24,8 @@ public apis list
 
 
 - [dataengineeringpilipinas/dep-data-engineering-open-track: A 6-month, community-powered build sprint for aspiring data builders. Brought to you by Data Engineering Pilipinas.](https://github.com/dataengineeringpilipinas/dep-data-engineering-open-track)
-- 
+
+data visualization references
+- [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html) - a great list of chart types grouped by function
+- [From data to Viz | Find the graphic you need](https://www.data-to-viz.com/#explore) - decision tree for deciding which type of chart to use
+- [Python Graph Gallery](https://python-graph-gallery.com/) - different implementation of charts in Python
