@@ -40,6 +40,7 @@ last-modified-date: Wednesday 29th June 2022 00:12:43
 
 
 ## Courses
+- [[Intro to Data Visualization with Matplotlib]]
 - [[Experimental Design in R]]
 
 

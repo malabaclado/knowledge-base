@@ -10,7 +10,7 @@ last-modified-date: Thursday 23rd June 2022 21:05:54
 
 Content:
 [[Breaking Through The Noise - Starting a Career in Data in 2022]]
-[[Acing the Data Science Resume]]
+[[Acing the Data Science Resume[[Datacamp RADAR]]]]
 
 ## Building the Data-Driven Workforce of the Future 
 
