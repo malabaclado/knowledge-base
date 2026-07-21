@@ -37,7 +37,10 @@ Setting up a Python Virtual Environment
 >>> deactivate
 ```
 
-
+Instaling FastAPI
+```
+pip install "fastapi[standard]"
+```
 
 Wrapper to run the API from terminal
 ```
@@ -87,3 +90,5 @@ The result is that every incoming request passes through `timing_middleware` bef
 pip freeze > requirements.txt
 ```
 
+
+# Query Parameters
