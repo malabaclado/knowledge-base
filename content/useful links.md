@@ -22,3 +22,6 @@ data visualization
 - [The Data Visualisation Catalogue](https://datavizcatalogue.com/index.html) - a great list of chart types grouped by function
 - [From data to Viz | Find the graphic you need](https://www.data-to-viz.com/#explore) - decision tree for deciding which type of chart to use
 - [Python Graph Gallery](https://python-graph-gallery.com/) - different implementation of charts in Python
+
+
+- [liquidslr/system-design-notes: Notes of the book System Desgin Interview - An Insider's Guide](https://github.com/liquidslr/system-design-notes)
