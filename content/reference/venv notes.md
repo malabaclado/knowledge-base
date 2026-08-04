@@ -3,7 +3,7 @@ title: venv
 ---
 Setting up a Python Virtual Environment
 ```
-# Setting up the environment
+# Setting up the enviroPnment
 >>> python -m venv .venv
 
 # Setting up specific Python version
