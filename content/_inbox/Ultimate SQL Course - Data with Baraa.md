@@ -4,6 +4,9 @@ tags:
 ---
 # Joins and Set
 
+![](https://i.imgur.com/2k0OvhU.png)
+
+
 #### Why use joins?
 1. To recombine data from multiple tables into one table.
 2. To enrich data by extracting additional columns from other tables.
