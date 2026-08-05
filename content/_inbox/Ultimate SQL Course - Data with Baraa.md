@@ -102,27 +102,43 @@ ON A.key = B.key
 Timestamp: YYYY-MM-DD HH:MM:SS
 
 **Extraction**
-- DAY()
+- `DAY(date)`
 	- returns DAY(integer) from a timestamp
 	- DAY(2025-08-20) = 20
-- MONTH()
+- `MONTH(date)`
 	- returns MONTH(integer) from a timestamp
 	- DAY(2025-08-20) = 8
-- YEAR()
+- `YEAR(date)`
 	- returns YEAR(integer) from a timestamp
 	- DAY(2025-08-20) = 2025
-- DATEPART(part, date)
+- `DATEPART(part, date)`
 	- DATEPART(year, 2025-08-20) = 2025
+	- ALWAYS returns an integer.
 	- Possible parameters for part: 
 		- month / day
 		- hours / minutes / seconds
 		- quarter
 		- week
-- DATENAME
-	- Returns the name of the datepart.
-	- 
-- DATETRUNC
-- EOMONTH
+- `DATENAME(part, date)`
+	- Returns the name of the date part.
+	- ALWAYS returns a string.
+	- DATENAME(month, 2025-08-20) = 'August'
+	- Possible parameters for part: 
+		- weekday
+		- month
+		- day (you get number as a string)
+- `DATETRUNC(part, date)`
+	- Truncates the date to a specific part / Resets at the level of *part*
+	- Always return a DATETIME (Can be CAST to DATE type)
+	- DATETRUNC(month, 2025-08-20) = 2025-08-01
+	- DATETRUNC(minutes, 2025-08-20 18:45:35) = 2025-08-20 18:45:00
+	- Remark:
+		- Datepart resets to 01
+		- Timepart resets to 00
+- `EOMONTH(date)`
+	- Changes date to end-of-month
+	- EOMONTH(2025-08-10) = 2025-08-31
+	- Always return a DATE
 
 **Format & Casting**
 - FORMAT
@@ -137,5 +153,10 @@ Timestamp: YYYY-MM-DD HH:MM:SS
 - ISDATE
 
 
-
-
+Tips
+- Avoid using DATENAME for filtering. Use DATEPART instead. Integers are always faster to search than strings.
+- DAY, MONTH, YEAR, DATEPART => INT
+  DATENAME => STRING
+  DATETRUNC => DATETIME
+  EOMONTH => DATE
+- 
