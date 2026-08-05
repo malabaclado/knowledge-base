@@ -75,7 +75,7 @@ ON A.key = B.key
 ##### Cross join
 
 
-## Row-level Functions
+# Row-level Functions
 
 ### String Functions
 
@@ -161,16 +161,28 @@ ON A.key = B.key
 	- Examples
 		- CONVERT(INT, '123') = 123
 - CAST(value AS data_type)
-	- Converts a value to a specified data type
-	- 
+	- Converts a value to a specified data type.
+	- CAST has no formatting options unlike CONVERT
+	- Examples
+		- CAST('123' AS INT) = 123
+		- CAST('2025-08-10' AS DATE) = 2025-08-10
 
 **Calculations**
-- DATEADD
-- DATEDIFF
+- `DATEADD(part, interval, date)`
+	- Adds or subtracts specific time intervals to a date
+	- Example
+		- DATEADD(month, 2, 2025-08-10) = 2025-10-10
+		- DATEADD(month, -4, 2025-08-10) = 2025-04-10
+- `DATEDIFF(part, start_date, end_date)`
+	- Calculates the differences between two dates
+	- Example
+		- DATEDIFF(month, 2025-08-10, 2025-10-10) = 2 
 
 **Validation**
-- ISDATE
-
+- ISDATE(value)
+	- Checks if the value is a date. Returns 1 if TRUE, otherwise 0.
+	- Can pass an integer.
+	- 
 
 Tips
 - Avoid using DATENAME for filtering. Use DATEPART instead. Integers are always faster to search than strings.
@@ -178,6 +190,21 @@ Tips
   DATENAME => STRING
   DATETRUNC => DATETIME
   EOMONTH => DATE
+
+## NULL Functions
+
+![](https://i.imgur.com/DBqhxXi.png)
+
+
+Replace values
+- `ISNULL(value, replacement_value)`
+	- Checks if the value is null. IF YES, returns the replacement value. Otherwise, it returns the value.
+- COALESCE
+- NULLIF
+
+Checks
+- IS NULL
+- IS NOT NULL
 
 ## Reference
 
@@ -195,3 +222,7 @@ Tips
 
 ### All possible date & time styles for CONVERT()
 ![](https://i.imgur.com/Pm2MKqZ.png)
+
+### CAST VS CONVERT VS FORMAT
+
+![](https://i.imgur.com/Q6FYPgq.png)
