@@ -99,7 +99,17 @@ ON A.key = B.key
 - ABS(): Gets absolute value
 
 ### Datetime Functions
-Timestamp: YYYY-MM-DD HH:MM:SS
+#### Date Types
+- DATETIME: `YYYY-MM-DD HH:MM:SS`
+	- Also called "TIMESTAMP" in some other SQL databases.
+- DATE: `YYYY-MM-DD`
+
+#### Date formats
+- International standard (ISO 8601): `YYYY-MM-dd`
+	- *This is the standard used by SQL Server*
+- US Standard: `MM-dd-YYYY`
+- European Standard: `dd-MM-YYYY`
+
 
 **Extraction**
 - `DAY(date)`
@@ -141,9 +151,15 @@ Timestamp: YYYY-MM-DD HH:MM:SS
 	- Always return a DATE
 
 **Format & Casting**
-- FORMAT
+- `FORMAT(value, format [,culture])`
+	- Changing the format value
+	- `culture` = can style based on a specific country/region
+	- Examples
+		- FORMAT(2025-08-10, 'dd/MM/yyyy') = 10/08/2025
 - CONVERT
+	- Cnov
 - CAST
+	- Changing data type
 
 **Calculations**
 - DATEADD
@@ -159,4 +175,17 @@ Tips
   DATENAME => STRING
   DATETRUNC => DATETIME
   EOMONTH => DATE
-- 
+
+## Reference
+
+### Decision process for choosing the appropriate DATE function
+
+![](https://i.imgur.com/qJ4V5KP.png)
+### Full list of date part specifiers
+
+![](https://i.imgur.com/zaLNXvi.png)
+
+
+### All possible date format specifiers
+
+![](https://i.imgur.com/ZpAiTxf.png)
