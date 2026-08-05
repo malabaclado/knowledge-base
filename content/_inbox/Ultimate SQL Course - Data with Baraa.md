@@ -199,12 +199,30 @@ Tips
 Replace values
 - `ISNULL(value, replacement_value)`
 	- Checks if the value is null. IF YES, returns the replacement value. Otherwise, it returns the value.
-- COALESCE
-- NULLIF
+- `COALESCE(value1, value2, value3...)`
+	- Accepts a list of values as input. Returns the first non-null value from a list.
+	- You can think of this as multiple ISNULL checks.
+	- Remark: ISNULL is faster than COALESCE.
+- `NULLIF(value1, value2)`
+	- Compares two values and returns NULL if they are equal, otherwise the first value.
+	- ![](https://i.imgur.com/ZVo6uEd.png)
+
 
 Checks
 - IS NULL
 - IS NOT NULL
+
+Use-cases
+- Handling nulls before doing data aggregations.
+- Handling nulls before doing math operators.
+- Handling nulls before doing joins.
+- Handling nulls before sorting data.
+
+NULLIF Use-case
+- Preventing division by zero
+	- ![](https://i.imgur.com/9sXHrKj.png)
+
+\
 
 ## Reference
 
@@ -226,3 +244,5 @@ Checks
 ### CAST VS CONVERT VS FORMAT
 
 ![](https://i.imgur.com/Q6FYPgq.png)
+### ISNULL VS COALESCE
+![](https://i.imgur.com/vE7Lk8A.png)
