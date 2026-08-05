@@ -73,3 +73,69 @@ ON A.key = B.key
 ##### Right anti join
 ##### Full anti join
 ##### Cross join
+
+
+## Row-level Functions
+
+### String Functions
+
+**Manipulation**
+- CONCAT: Combines multiple strings
+- UPPER: Converts characters to uppercase
+- LOWER: Converts characters to lowercase
+- TRIM: Removes leading and trailing spaces
+- REPLACE: Replaces specific character with a new character
+
+**Calculation**
+- LEN: Counts the number of characters
+
+**String Extraction**
+- LEFT: Extracts specific number of characters from start of string.
+- RIGHT: Extracts specific number of characters from end of string.
+- SUBSTRING: Extracts a part of a string at a specified position.
+
+### Numeric Functions
+- ROUND(num, digits)
+- ABS(): Gets absolute value
+
+### Datetime Functions
+Timestamp: YYYY-MM-DD HH:MM:SS
+
+**Extraction**
+- DAY()
+	- returns DAY(integer) from a timestamp
+	- DAY(2025-08-20) = 20
+- MONTH()
+	- returns MONTH(integer) from a timestamp
+	- DAY(2025-08-20) = 8
+- YEAR()
+	- returns YEAR(integer) from a timestamp
+	- DAY(2025-08-20) = 2025
+- DATEPART(part, date)
+	- DATEPART(year, 2025-08-20) = 2025
+	- Possible parameters for part: 
+		- month / day
+		- hours / minutes / seconds
+		- quarter
+		- week
+- DATENAME
+	- Returns the name of the datepart.
+	- 
+- DATETRUNC
+- EOMONTH
+
+**Format & Casting**
+- FORMAT
+- CONVERT
+- CAST
+
+**Calculations**
+- DATEADD
+- DATEDIFF
+
+**Validation**
+- ISDATE
+
+
+
+
