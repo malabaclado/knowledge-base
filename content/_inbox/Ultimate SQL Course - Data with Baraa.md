@@ -156,10 +156,13 @@ ON A.key = B.key
 	- `culture` = can style based on a specific country/region
 	- Examples
 		- FORMAT(2025-08-10, 'dd/MM/yyyy') = 10/08/2025
-- CONVERT
-	- Cnov
-- CAST
-	- Changing data type
+- `CONVERT(data_type, value [,style])`
+	- Converts a data or time value to a different data type AND formats the value
+	- Examples
+		- CONVERT(INT, '123') = 123
+- CAST(value AS data_type)
+	- Converts a value to a specified data type
+	- 
 
 **Calculations**
 - DATEADD
@@ -189,3 +192,6 @@ Tips
 ### All possible date format specifiers
 
 ![](https://i.imgur.com/ZpAiTxf.png)
+
+### All possible date & time styles for CONVERT()
+![](https://i.imgur.com/Pm2MKqZ.png)
