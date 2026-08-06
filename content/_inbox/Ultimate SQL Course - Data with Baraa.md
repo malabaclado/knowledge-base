@@ -207,10 +207,11 @@ Replace values
 	- Compares two values and returns NULL if they are equal, otherwise the first value.
 	- ![](https://i.imgur.com/ZVo6uEd.png)
 
-
 Checks
 - IS NULL
+	- Returns TRUE if value is NULL, otherwise FALSE
 - IS NOT NULL
+	- Returns TRUE if value is NOT NULL, otherwise FALSE
 
 Use-cases
 - Handling nulls before doing data aggregations.
@@ -220,9 +221,17 @@ Use-cases
 
 NULLIF Use-case
 - Preventing division by zero
-	- ![](https://i.imgur.com/9sXHrKj.png)
+	- ![295](https://i.imgur.com/9sXHrKj.png)
 
-\
+
+IS NULL Use-case
+- Filtering data
+	- ![332](https://i.imgur.com/bRvrcFv.png)
+- Anti joins
+	- ![489](https://i.imgur.com/xIvNmm2.png)
+
+
+### CASE Statements
 
 ## Reference
 
@@ -246,3 +255,6 @@ NULLIF Use-case
 ![](https://i.imgur.com/Q6FYPgq.png)
 ### ISNULL VS COALESCE
 ![](https://i.imgur.com/vE7Lk8A.png)
+
+### NULL VS Empty VS Blank
+![](https://i.imgur.com/4RxXi0K.png)
