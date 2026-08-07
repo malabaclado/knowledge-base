@@ -258,3 +258,6 @@ IS NULL Use-case
 
 ### NULL VS Empty VS Blank
 ![](https://i.imgur.com/4RxXi0K.png)
+
+# Window Functions
+
