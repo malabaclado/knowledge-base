@@ -414,7 +414,7 @@ Sample Maximum-Flow Problem Excel Model:
 ![[Pasted image 20230809203123.png]]
 ![[Pasted image 20230809203229.png]]
 
-### Transshipment Problem
+### Transhipment Problem
 Objective: Distribute products to depots as cheaply as possible.
 ![[Pasted image 20230809203541.png]]
 ![[Pasted image 20230809203606.png]]
