@@ -35,6 +35,27 @@ conn.commit()
 conn.close()
 ```
 
+
+# Run custom query template
+```python
+def runQuery(query, fetch=0):
+    db_path='/kaggle/input/datasets/datazng/shopping-mall-customer-data-segmentation-analysis/cleaned_shoppingdata.sqlite'
+    connection = sqlite3.connect(database=db_path, check_same_thread=False)
+    cursor = connection.cursor()
+    cursor.execute(query)
+
+    
+    if fetch==0:
+        contents = cursor.fetchall()
+    elif fetch==1:
+        contents = cursor.fetchone()
+    else:
+        contents = cursor.fetchmany(n)
+
+    connection.close()
+    return contents
+```
+
 # Fetching items through a SELECT statement
 
 ```python
