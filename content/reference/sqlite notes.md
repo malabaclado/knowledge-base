@@ -5,7 +5,8 @@ title: sqlite
 Data types in sqlite: https://sqlite.org/datatype3.html
 Reference site: https://www.sqlitetutorial.net/
 
-**Basic connection template:**
+# Basic connection template
+
 ```python
 # Create connection object
 
@@ -34,8 +35,8 @@ conn.commit()
 conn.close()
 ```
 
+# Fetching items through a SELECT statement
 
-%% Fetching though a SELECT statement:
 ```python
 c.execute("""
 	SELECT *
@@ -48,10 +49,29 @@ c.fetchall() # returns all results as a list
 
 ```
 
- %%
+## Fetching all table names
+```python
+cursor = connection.cursor()
+cursor.execute(
+    "SELECT name FROM sqlite_schema WHERE type='table' AND name NOT LIKE 'sqlite_%';"
+)
 
+tables = cursor.fetchall()
 
-A better way of inserting values into a database that guards against SQL injection attacks
+# Extract table names from list of tuples
+table_names = [table[0] for table in tables]
+print("Tables:", table_names)
+
+connection.close()
+```
+
+	# Fetch metadata for all columns in the table
+```python
+cursor.execute(f"PRAGMA table_info({table_name});")
+columns_info = cursor.fetchall()
+```
+
+# A better way of inserting values into a database that guards against SQL injection attacks
 ```python
 # first way
 c.execute("INSERT INTO employees VALUES (?, ?, ?)", (emp_1.first, emp_1.last, emp_1.pay)) 
@@ -67,9 +87,10 @@ conn = sqlite3.connect(':memory:') # Creates an in-memory database
 
 # Basic CRUD operations in sqlite
 
-Note: Always add a commit statements after your CRUD commands. This pushes the changes to the database.
+Note: Always add a `commit` statements after your CRUD commands. This pushes the changes to the database.
 
-Updating records using `rowid`. This is useful for updating specific records.
+## Updating records using `rowid`. 
+This is useful for updating specific records.
 ```python
 # Below code shows rowid in sqlite
 c.execute("""
@@ -89,7 +110,7 @@ conn.commit()
 ```
 
 
-Deleting records
+## Deleting records
 ```python
 # Deleting a record
 c.execute("DELETE from customers WHERE rowid = 6")
