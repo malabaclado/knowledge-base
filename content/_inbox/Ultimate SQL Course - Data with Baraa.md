@@ -281,7 +281,36 @@ How normal SQL queries are processed:
 4. Database engine looks for the table in user data storage.
 5. Provides results back to analyst.
 
-# Subqueries
+## Subqueries
 
 Subquery: A query inside a SQL query.
+
+Remarks:
+- The intermediate result of a subquery is only locally known to the main query. It cannot be accessed from a separate query.
+
+Type based on dependency
+1. Correlated: Subquery is NOT independent of main query.
+2. Non-correlated: Subquery **is independent** of main query.
+
+Type based on result types
+1. Scalar: returns a single value
+2. Row: returns a row of values
+3. Table: returns another table
+
+Type based on location
+1. SELECT
+2. FROM
+3. JOIN
+4. WHERE
+	1. Via Comparison Operators
+	2. Via Logical Operators
+
+### FROM Subquery
+
+![](https://i.imgur.com/qrg1J6L.png)
+
+
+### SELECT Subquery
+
+This is used to aggregate data side by side with the main query's data, allowing for direct comparison. Note that only Scalar subqueries are allowed on SELECT subqueries.
 
