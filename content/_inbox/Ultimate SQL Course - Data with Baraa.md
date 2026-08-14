@@ -259,5 +259,29 @@ IS NULL Use-case
 ### NULL VS Empty VS Blank
 ![](https://i.imgur.com/4RxXi0K.png)
 
-# Window Functions
+# Advanced SQL Techniques
+
+Database Engine = takes care of managing queries and storage
+
+2 primary types of storage:
+Disk storage = stores long term memory
+Cache storage = short-term memory
+
+Disk stores 3 types of data:
+1. User data storage: The main contents of the database (For example: Customers table)
+2. System catalog: Database internal storage for its own information; holds metadata (For example: Metadata for the Customers table)
+3. Temporary data: Temporary space used by the DB for short-term tasks like processing queries or sorting data. (typically found in "System Databases>tempdb>Temporary Tables" in SQL Server)
+
+Information schema: (In SQL Server) a system-defined schema that consists of built-in views that provides information about a database. 
+
+How normal SQL queries are processed:
+1. Analyst runs the SQL query
+2. Database engine processes the query
+3. Database engine looks for the table in cache, provides results if available.
+4. Database engine looks for the table in user data storage.
+5. Provides results back to analyst.
+
+# Subqueries
+
+Subquery: A query inside a SQL query.
 
