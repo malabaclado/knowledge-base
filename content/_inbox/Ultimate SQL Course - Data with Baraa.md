@@ -314,3 +314,10 @@ Type based on location
 
 This is used to aggregate data side by side with the main query's data, allowing for direct comparison. Note that only Scalar subqueries are allowed on SELECT subqueries.
 
+### JOIN Subquery
+
+Use for preparing the data (by filtering or aggregating) before joining it with other tables.
+
+### WHERE Subqueries
+Note: Only scalar subqueries are allowed.
+
