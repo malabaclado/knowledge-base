@@ -321,3 +321,11 @@ Use for preparing the data (by filtering or aggregating) before joining it with 
 ### WHERE Subqueries
 Note: Only scalar subqueries are allowed.
 
+## Common Table Expressions (CTE)
+
+A CTE is a temporary named result set (a virtual table) that can be used multiple times within your query to simplify and organize complex query.
+
+CTE vs Subquery
+- Subquery results are used only once in the query. CTE results can be used multiple times.
+- Subqueries are written bottom up (main query first then subquery) while CTEs are written top down.
+- 
