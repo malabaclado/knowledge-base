@@ -25,3 +25,4 @@ data visualization
 
 
 - [liquidslr/system-design-notes: Notes of the book System Desgin Interview - An Insider's Guide](https://github.com/liquidslr/system-design-notes)
+- [Hynek’s Blog](https://hynek.me/articles/) - blogs about Python
