@@ -26,3 +26,7 @@ data visualization
 
 - [liquidslr/system-design-notes: Notes of the book System Desgin Interview - An Insider's Guide](https://github.com/liquidslr/system-design-notes)
 - [Hynek’s Blog](https://hynek.me/articles/) - blogs about Python
+
+---
+- [prplkane/Resume-Automation: Automate tailored, ATS-ready resumes in minutes using JSON + Google Docs + Apps Script](https://github.com/prplkane/Resume-Automation)
+- [OrlandoFon/Resume-Generator-With-Python: A simple Python-based resume creator that generates professional-looking PDF documents with customizable fonts, colors, and sections using the ReportLab library.](https://github.com/OrlandoFon/Resume-Generator-With-Python)
