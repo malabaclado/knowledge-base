@@ -1,0 +1,19 @@
+{
+  "selectedRagSetting": "custom",
+  "webSearchEnabled": false,
+  "selectedModel": null,
+  "ragSettings": {
+    "custom": {
+      "storeId": "fileSearchStores/obsidiancontentcustom-s18x62e77maq",
+      "storeIds": [],
+      "storeName": "obsidian-content-custom",
+      "embeddingModel": "models/gemini-embedding-2",
+      "isExternal": false,
+      "targetFolders": [],
+      "excludePatterns": [],
+      "metadataFilter": "",
+      "files": {},
+      "lastFullSync": null
+    }
+  }
+}
