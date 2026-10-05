@@ -1,0 +1,41 @@
+## You
+
+What can you help me with?
+
+## gemini-3.8-flash
+
+I am an AI assistant integrated directly into your **Obsidian** environment. Here is a breakdown of what I can help you with:
+
+---
+
+### 1. **Vault & Note Management**
+- **Search & Retrieval**: Search through your notes by name, text content, or semantic meaning across your documents (including PDFs).
+- **Read & Inspect**: Read entire notes, specific sections, line ranges, or context around keywords, as well as check your currently active note.
+- **Create & Edit Notes**: Draft new notes, update or append to existing notes, and organize folder hierarchies.
+- **Dashboard & Activity Tracking**: Check your daily timeline activity, calendar plans, memos, and Kanban status changes recorded in your vault.
+
+---
+
+### 2. **Obsidian Flavored Markdown Formatting**
+- **Wikilinks & Embeds**: Link notes (`[[Note Name]]`), specific headings (`[[Note#Heading]]`), or blocks (`[[Note#^block-id]]`), and embed notes, images, or PDFs (`![[file]]`).
+- **Callouts**: Structure content using standard, custom-titled, or collapsible callouts (`> [!tip]`, `> [!warning]-`, `> [!faq]`).
+- **Frontmatter & Properties**: Set up YAML frontmatter for tags, aliases, dates, and metadata.
+- **Math & Highlights**: Format LaTeX equations (`$x = y$`, `$$...$$`) and highlight key text (`==highlight==`).
+
+---
+
+### 3. **Writing, Research & Knowledge Synthesis**
+- **Summarization**: Summarize lengthy notes, meeting transcripts, research articles, or PDFs in your vault.
+- **Connection Building**: Discover links and relationships between different concepts and notes in your vault.
+- **Brainstorming & Drafting**: Generate outlines, drafts, documentation, project plans, and study guides.
+
+---
+
+### 4. **Calculations & Data Processing**
+- **Data Transformation & Code**: Run sandboxed JavaScript to parse, calculate, sort, filter, or reformat text, tables, and lists.
+- **Workflow Automation**: Inspect, explain, or configure Obsidian workflow specifications.
+
+---
+
+### How to get started
+Feel free to ask a question about your vault, provide a task (e.g., *"Summarize my active note"*, *"Search for notes mentioning project roadmap"*, or *"Create a template for meeting notes"*), or reference a specific file!

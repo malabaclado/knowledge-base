@@ -15,5 +15,8 @@
       "files": {},
       "lastFullSync": null
     }
-  }
+  },
+  "sentPromptHistory": [
+    "What can you help me with?"
+  ]
 }

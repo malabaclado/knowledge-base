@@ -5,5 +5,4 @@ Steps in Conducting Customer Segmentation
 2. Create cohort metrics 
 3. RFM segmentation
 
-
 [[Practical Implementation of K-means Clustering]]
