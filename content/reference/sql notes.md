@@ -121,7 +121,7 @@ ORDER BY a.total_brand_sales desc;
 
 ### When to use a WITH subquery?
 -   When a user wants to **create a version** of an existing table **to be used in a larger query** (e.g., aggregate daily prices to an average price table).
--   It is advantageous for readability purposes.
+-   It is advantageous for readability purposes.[]()
 
 ### WITH Common Table Expression
 
