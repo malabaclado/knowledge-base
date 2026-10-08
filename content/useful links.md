@@ -1,4 +1,4 @@
-- [data science cheat sheets (Google Drive)](https://drive.google.com/drive/folders/1muLmkfiTaRXB7hoja11azWuEo-x96pvj?usp=sharing) - a collection of useful reference sheets for data science
+
 - [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - a collection of useful MCP servers on github
 - [dataengineeringpilipinas/dep-data-engineering-open-track: A 6-month, community-powered build sprint for aspiring data builders. Brought to you by Data Engineering Pilipinas.](https://github.com/dataengineeringpilipinas/dep-data-engineering-open-track)
 - [Get Started With Intel® Distribution for Python*](https://www.intel.com/content/www/us/en/developer/articles/technical/get-started-with-intel-distribution-for-python.html)

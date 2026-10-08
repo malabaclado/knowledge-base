@@ -1,0 +1,2 @@
+- [data science cheat sheets (Google Drive)](https://drive.google.com/drive/folders/1muLmkfiTaRXB7hoja11azWuEo-x96pvj?usp=sharing) - a collection of useful reference sheets for data science
+- [SQL course (Data with Baraa)](https://drive.google.com/drive/folders/1nJM6C93JiaGFMy_CGFBve8vH3C3D_Hrg?usp=sharing) - a collection of lecture slides ranging basic to advanced SQL topics. Big thanks to 
