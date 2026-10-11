@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"523a72c431af9ee4","type":"text","text":"Job Post","x":-99,"y":-398,"width":250,"height":60},
+		{"id":"773b5224ad5f1b64","type":"text","text":"Notion Database","x":-99,"y":-220,"width":250,"height":60},
+		{"id":"c1c10a0db99a5888","x":-100,"y":-19,"width":250,"height":60,"type":"text","text":"Get description"},
+		{"id":"6c63ca76bde236b6","x":-99,"y":80,"width":250,"height":60,"type":"text","text":"My CV (md)"},
+		{"id":"fc8a7c460800e165","x":-100,"y":180,"width":250,"height":60,"type":"text","text":"My projects and certifications"},
+		{"id":"40b26916a91c74b1","x":280,"y":-19,"width":340,"height":254,"type":"text","text":"LLM Prompt: Based on my {CV} and {Projects and Certifications}, score:\n1. How many of the requirements do I pass? \n\nHere's the job description: {descripition}.\n\n\n---\nPrompt 2:\nBased on my {CV}, {Projects}, and this personal preference:\n\n{The role should involve Python or SQL, some data sciene/engineering work. Higher score if I can use my Snowflake certification}\n\nScore this job description based on my likiness:\n\n{description}"}
+	],
+	"edges":[
+		{"id":"9601c232de28b6a4","fromNode":"523a72c431af9ee4","fromSide":"bottom","toNode":"773b5224ad5f1b64","toSide":"top","label":"save to"},
+		{"id":"808bfb2e34f45383","fromNode":"773b5224ad5f1b64","fromSide":"bottom","toNode":"c1c10a0db99a5888","toSide":"top","label":"via Notion API"},
+		{"id":"e5458725c86d12f8","fromNode":"c1c10a0db99a5888","fromSide":"right","toNode":"40b26916a91c74b1","toSide":"left"},
+		{"id":"834808fedeb2c1b9","fromNode":"6c63ca76bde236b6","fromSide":"right","toNode":"40b26916a91c74b1","toSide":"left"},
+		{"id":"1fa5731b64275aaf","fromNode":"fc8a7c460800e165","fromSide":"right","toNode":"40b26916a91c74b1","toSide":"left"},
+		{"id":"fc46207f21dfa7ff","fromNode":"40b26916a91c74b1","fromSide":"top","toNode":"773b5224ad5f1b64","toSide":"right","label":"save to"}
+	]
+}
