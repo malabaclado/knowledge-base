@@ -1,39 +1,44 @@
 # Mark Jayson Labaclado
-Block 209 Lot 16 Phase 5 Brgy. Paliparan 3, Dasmarinas City, Cavite 
-+63-9109029498 | malabaclado@gmail.com 
+- Contact No: (+639) 10-902-9498
+- Address: Cavite, Philippines
+- Email: malabaclado@gmail.com
+- LinkedIn: [Mark Jayson Labaclado | LinkedIn](https://www.linkedin.com/in/mark-jayson-labaclado-14603b204/)
+- Github: https://github.com/malabaclado
+- Hackerrank: https://www.hackerrank.com/labaclado_mj
+- Credly: https://www.credly.com/users/mark-jayson-labaclado/badges
 
-# Summary
-Detail-oriented and analytical recent graduate with a degree in BS Mathematics seeking an entry-level Data Analyst position. Strong foundation in data analysis techniques, statistical analysis, and data visualization. Adept at using programming languages and tools to derive actionable insights from complex datasets.
 
-# Skills
-- Excel | Pivot Tables, VLOOKUP, HLOOKUP, INDEX, MATCH, Conditional Formatting, Data Validation, Data Analysis Toolpak, Excel Solver 
-- SQL | Joins, Aggregate functions, GROUPBY, Subqueries, Views, Window functions
-- Tableau | Joining data, Calculated Fields, Dashboarding, Story
-- Python | pandas, NumPy, matplotlib, scikit-learn
-- R programming | tidyverse, ggplot2
-- Data cleaning
-- Data analysis
-- Data visualization
-- Database management
-- Statistical aptitude
-- Dashboarding
-- Reporting
+# Work Experience
+
+## Senior Specialist, Specialty Services
+Company: FactSet Research Systems
+Department: CTS Digital Client Services / FDSG / Digital API
+
 
 # Projects
-
+## Financial Econometrics API: Volatility and Value-at-Risk Forecasting with Python
 
 
 
 # Education
-## University of the Philippines Diliman | July 2023
-**Bachelor of Science in Mathematics**
-- Relevant Coursework: Statistics, Mathematical Finance, Operations Research
-- Undergraduate Thesis: Technical Analysis Prediction of Philippine Stock Prices using Support Vector Regression
+## University of the Philippines Diliman 
+**Bachelor of Science in Mathematics (July 2023)**
+- **Statistics**: Took 9-units in mathematical statistics covering sampling, hypothesis testing, confidence interval estimation, regression, and correlation analysis.
+- **Mathematical** Finance: Took 6-units in mathematical finance, covering interest rate calculations, bond and coupon rates, life insurance premiums, and benefit reserves.
+- **Operations Research**: Completed a 3-unit course focusing on the formulation of business problems as mathematical models such as linear and non-linear programming.
+- **Undergraduate Research**: Technical Analysis Prediction of Philippine Stock Prices using Support Vector Regression
 
 # Trainings and Certification
-## Google Data Analytics (July 2023)
-## Project SPARTA (May to Nov 2023)
-## Datacamp 
 
-# Organizational Experiences
-# Other Experiences
+## SnowPro Core Certification
+Issuing Organization: Snowflake
+## Applied Data Science Lab
+Issuing Organization: WorldQuant University
+## Google Data Analytics Professional Certificate
+Issuing Organization: Coursera
+## Google Advanced Data Analytics Professional Certificate
+Issuing Organization: Coursera
+## DataCamp Containerization and Virtualization
+Issuing Organization: DataCamp
+## DataCamp Power BI Fundamentals
+Issuing Organization: DataCamp
