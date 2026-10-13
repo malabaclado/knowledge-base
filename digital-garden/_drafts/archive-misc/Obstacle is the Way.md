@@ -1,0 +1,20 @@
+---
+tags: book-note 
+alias:
+creation-date: Wednesday 5th April 2023
+---
+
+# Part 1. Perception  
+## Finding the opportunity
+
+- It’s one thing to not be overwhelmed by obstacles, or discouraged or upset by them. This is something that few are able to do. **But ==after you have controlled your emotions, and you can see objectively and stand steadily, the next step becomes possible: a mental flip==, so you’re looking not at the obstacle but at the opportunity within it.**
+
+- **It’s our preconceptions that are the problem. They tell us that things should or need to be a certain way**, so when they’re not, we naturally assume that we are at a disadvantage or that we’d be wasting our time to pursue an alternate course. **When really, it’s all fair game, and ==every situation is an opportunity for us to act==.**
+
+- *"Blessings and burdens are not mutually exclusive"*
+
+- **Sports psychologists recently did a study of elite athletes who were struck with some adversity or serious injury.** Initially, each reported feeling isolation, emotional disruption, and doubts about their athletic ability. Yet afterward, each reported gaining a desire to help others, additional perspective, and realization of their own strengths. **In other words, every fear and doubt they felt during the injury turned into greater abilities in those exact areas. It’s a beautiful idea. Psychologists call it adversarial growth and post-traumatic growth. ==“That which doesn’t kill me makes me stronger”== is not a cliché but fact.**
+
+- *"The struggle against an obstacle inevitably propels the fighter to a new level of functioning. The extent of the struggle determines the extent of the growth."*
+
+- **==Behind the behaviors that provoke an immediate negative reaction is opportunity—==some exposed benefit that we can seize mentally and then act upon. So focus on that—on the poorly wrapped and initially repulsive present you’ve been handed in every seemingly disadvantageous situation.** Because beneath the packaging is what we need—often something of real value. A gift of great benefit.

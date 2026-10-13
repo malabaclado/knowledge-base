@@ -1,0 +1,12 @@
+Module:  [[Learning Activity 5 - Traditional Techniques.pdf]]
+
+---
+1. BABA-TAAS
+2. EKIS
+3.  BANDA Y BANDA
+4.  OCHO
+5. SUNGKIT PA-EKIS
+6. SUNGKIT BANDA Y BANDA
+7. TOCHADA
+8. PILANTIK (HORIZONTAL ABANIKO)
+9. VERTICAL ABANIKO

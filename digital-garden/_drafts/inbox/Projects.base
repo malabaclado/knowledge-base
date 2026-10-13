@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Type.contains("Project")
+    order:
+      - file.name
+      - file.ctime
+      - file.mtime
+      - tags
+    columnSize:
+      file.name: 452

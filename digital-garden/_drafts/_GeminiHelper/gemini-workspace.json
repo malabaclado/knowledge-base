@@ -1,0 +1,22 @@
+{
+  "selectedRagSetting": "custom-rag",
+  "webSearchEnabled": false,
+  "selectedModel": null,
+  "ragSettings": {
+    "custom-rag": {
+      "storeId": "fileSearchStores/obsidiancontentcustomrag-qdz85yfsgyaf",
+      "storeIds": [],
+      "storeName": "obsidian-content-custom-rag",
+      "embeddingModel": "models/gemini-embedding-2",
+      "isExternal": false,
+      "targetFolders": [],
+      "excludePatterns": [],
+      "metadataFilter": "",
+      "files": {},
+      "lastFullSync": null
+    }
+  },
+  "sentPromptHistory": [
+    "What can you help me with?"
+  ]
+}
