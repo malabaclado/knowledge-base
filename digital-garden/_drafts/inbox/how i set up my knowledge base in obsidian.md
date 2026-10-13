@@ -1,4 +1,4 @@
-# How I sync Gemini AI chats to Obsidian
+[]()# How I sync Gemini AI chats to Obsidian
 
 **Step 1: Set up Local REST API with MCP Obsidian Plugin** 
 Github link: https://github.com/coddingtonbear/obsidian-local-rest-api
