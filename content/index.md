@@ -5,10 +5,11 @@ date: 4/30/2026
 
 Welcome to my digital garden! 
 
-
+Unlike a traditional blog, this space is an evolving web of interconnected notes, personal frameworks, and ongoing research. Some thoughts are fresh sprouts; others are long-standing reference points.
 
 
 > *“A garden is never finished; it is only tended.”* 
+> 
 > Feel free to explore the interactive graph on the side panel or press `Ctrl + K` / `Cmd + K` to search across all notes.
 
 
