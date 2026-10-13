@@ -1,4 +1,0 @@
-![](<%tp.system.clipboard()%>)
-
-
-

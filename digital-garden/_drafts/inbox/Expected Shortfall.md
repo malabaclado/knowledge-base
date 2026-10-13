@@ -1,1 +1,0 @@
-**Expected Shortfall (ES)**—also known as **Conditional Value at Risk (CVaR)** or **Expected Tail Loss (ETL)**—is a financial risk metric that quantifies the **average expected loss when a portfolio suffers an extreme downturn beyond a specified confidence threshold**.

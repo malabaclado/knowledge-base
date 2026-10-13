@@ -1,5 +1,0 @@
-[[Habits]]
-[[Goal Setting]]
-[[My Life Plan]]
-[[Daily Schedule]]
- [[Year Goal 2022]]
