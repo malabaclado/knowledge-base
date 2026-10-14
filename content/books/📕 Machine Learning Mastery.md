@@ -119,6 +119,15 @@ The *second best way* is to use clever techniques from statistics called **resam
 	- This has the speed of using a train/test split and the reduction in variance in the estimated performance of k-fold cross validation. 
 	- You can also repeat the process many more times as needed to improve the accuracy. A down side is that repetitions may include much of the same data in the train or the test split from run to run, introducing redundancy into the evaluation.
 
+**What technique to use when?**
+
+- Generally, k-fold cross validation is the *gold standard* for evaluating the performance of a machine learning algorithm on unseen data with *k* set to 3, 5 or 10.
+- Using a train/test split is good for speed when using a slow algorithm and produces performance estimates with lower bias when using large datasets.
+- Techniques like leave-one-out cross validation and repeated random splits can be useful intermediates when trying to balance variance in the estimated performance, model training speed and size.
+
+The best advice is to experiment and find a technique for your problem that is fast and produces reasonable estimates of performance that you can use to make decisions. 
+
+*If in doubt, use 10-fold cross validation.* 
 
 # Code Snippets
 
@@ -372,7 +381,7 @@ print("Accuracy: %.3f%% (%.3f%%)") % (results.mean()*100.0, results.std()*100.0)
 
 ## Evaluate using Shuffle Split Cross Validation
 
-```
+```python
 # Evaluate using Shuffle Split Cross Validation
 from pandas import read_csv
 from sklearn.model_selection import ShuffleSplit
@@ -386,5 +395,9 @@ X = array[:,0:8]
 Y = array[:,8]
 n_splits = 10
 test_size = 0.33
-
+seed = 7
+kfold = ShuffleSplit(n_splits=n_splits, test_size=test_size, random_state=seed)
+model = LogisticRegression()
+results = cross_val_score(model, X, Y, cv=kfold)
+print("Accuracy: %.3f%% (%.3f%%)") % (results.mean()*100.0, results.std()*100.0)
 ```
