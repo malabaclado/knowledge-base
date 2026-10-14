@@ -1,6 +1,8 @@
 ---
 title: Machine Learning Mastery (Jason Brownlee)
 ---
+This note serves a summary and a quick reference of code snippets/recipes outlined in the book.
+
 # Top-level Framework for an End-to-End Machine Learning Project
 
 1. **Defining the problem.** Investigate and characterize the problem in order to better understand the goals of the project.
@@ -9,6 +11,14 @@ title: Machine Learning Mastery (Jason Brownlee)
 4. **Evaluate algorithms.** Design a test harness to evaluate a number of standard algorithms on the data and select the top few to investigate further.
 5. **Improve results.** Use algorithm tuning and ensemble methods to get the most out of well-performing algorithms on your data
 6. **Present results.** Finalize the model, make predictions and present results.
+
+
+The following chapters are arranged in according to the above framework:
+
+- Understand your data with descriptive statistics (Analyze data)
+- Understand your data with visualizations (Analyze data)
+- Pre-process your data (Prepare the data)
+- Feature selection (Prepare the data)
 
 # Understand your data with descriptive statistics
 You must understand your data in order to get the best results. Here's how you can use descriptive statistics to understand your data.
