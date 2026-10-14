@@ -138,9 +138,29 @@ The best advice is to experiment and find a technique for your problem that is f
 
 *If in doubt, use 10-fold cross validation.* 
 
+# Algorithm Evaluation Metrics
+
+## Common Classification Metrics
+
+### Classification Accuracy
+- Accuracy = Correct # of Predictions / Total # Predictions Made
+- This is the most common evaluation metric for classification problems, it is also the most misused. **It is really only suitable when there are an equal number of observations in each class (which is rarely the case) and that all predictions and prediction errors are equally important**, which is often not the case.
+### Logarithmic Loss
+### Area under ROC Curve
+### Confusion Matrix
+### Classification Report
+
+
+
+
+
+
+
 # Code Snippets
 
 ## Pearwise Pearson Correlation
+
+#code-snippets Pearson Correlation
 
 ``` python
 # Pairwise Pearson correlations
