@@ -12,13 +12,21 @@ This note serves a summary and a quick reference of code snippets/recipes outlin
 5. **Improve results.** Use algorithm tuning and ensemble methods to get the most out of well-performing algorithms on your data
 6. **Present results.** Finalize the model, make predictions and present results.
 
-
-The following chapters are arranged in according to the above framework:
+The chapters of the book are arranged according to the above framework:
 
 - Understand your data with descriptive statistics (Analyze data)
 - Understand your data with visualizations (Analyze data)
 - Pre-process your data (Prepare the data)
 - Feature selection (Prepare the data)
+- Resampling Methods. (Evaluate Algorithms)
+- Algorithm Evaluation Metrics. (Evaluate Algorithms)
+- Spot-Check Classification Algorithms. (Evaluate Algorithms)
+- Spot-Check Regression Algorithms. (Evaluate Algorithms)
+- Model Selection. (Evaluate Algorithms)
+- Pipelines. (Evaluate Algorithms)
+- Ensemble Methods. (Improve Results)
+- Algorithm Parameter Tuning. (Improve Results)
+- Model Finalization. (Present Results)
 
 # Understand your data with descriptive statistics
 You must understand your data in order to get the best results. Here's how you can use descriptive statistics to understand your data.
@@ -68,7 +76,25 @@ Outlined below are common pre-processing techniques:
 
 # Feature Selection
 
+**What is feature selection?**
 
+Feature selection is a process where you automatically select those features in your data that contribute most to the prediction variable or output in which you are interested. Having irrelevant features in your data can decrease the accuracy of many models, especially linear algorithms like linear and logistic regression.
+
+**Why perform feature selection?**
+
+- Reduces Overfitting: Less redundant data means less opportunity to make decisions based on noise.
+- Improves Accuracy: Less misleading data means modeling accuracy improves.
+- Reduces Training Time: Less data means that algorithms train faster.
+
+Common techniques for feature selection
+- **Univariate Selection** - **uses statistical tests** (eg. chi-squared test) to select those features that have the strongest relationship with the output variable
+	- The scikit-learn library provides the `SelectKBest` class that can be used with a suite of different statistical tests to select a specific number of features.
+- **Recursive Feature Elimination** - **recursively removes attributes** and builds a model on those attributes that remain
+	- It uses the model accuracy to identify which attributes (and combination of attributes) contribute the most to predicting the target attribute.
+- Principal Component Analysis - Principal Component Analysis (or PCA) uses linear algebra to transform the dataset into a
+compressed form. Generally this is called a data reduction technique. A property of PCA is that
+you can choose the number of dimensions or principal components in the transformed result.
+- Feature Importance
 
 # Code Snippets
 
@@ -159,4 +185,52 @@ normalizedX = scaler.transform(X)
 # summarize transformed data
 set_printoptions(precision=3)
 print(normalizedX[0:5,:])
+```
+
+
+## Feature Selection with `SelectKBest`
+```python
+# Feature Extraction with Univariate Statistical Tests (Chi-squared for classification)
+from pandas import read_csv
+from numpy import set_printoptions
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
+# load data
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+# feature extraction
+test = SelectKBest(score_func=chi2, k=4)
+fit = test.fit(X, Y)
+# summarize scores
+set_printoptions(precision=3)
+print(fit.scores_)
+features = fit.transform(X)
+# summarize selected features
+print(features[0:5,:])
+```
+
+## Feature Extraction with RFE
+```python
+# Feature Extraction with RFE
+from pandas import read_csv
+from sklearn.feature_selection import RFE
+from sklearn.linear_model import LogisticRegression
+# load data
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+# feature extraction
+model = LogisticRegression()
+rfe = RFE(model, 3)
+fit = rfe.fit(X, Y)
+print("Num Features: %d") % fit.n_features_
+print("Selected Features: %s") % fit.support_
+print("Feature Ranking: %s") % fit.ranking_
 ```
