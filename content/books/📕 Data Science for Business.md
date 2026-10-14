@@ -1,14 +1,16 @@
 ---
 title: "Data Science for Business: What You Need to Know About Data Mining and Data-Analytic Thinking"
+description:
+date: 2026-10-14
+lastmod: 2026-10-14
+draft: false
+tags:
+aliases:
 ---
+
 What I want to take away from this book:
 - Glossary of terms (High level understanding of data science techniques)
 - Frameworks
-
-
-
-
-
 
 
 # II. Business Problems and Data Science Solutions

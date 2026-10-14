@@ -1,6 +1,15 @@
 ---
 title: Machine Learning Mastery (Jason Brownlee)
+description:
+date: 2026-10-14
+lastmod: 2026-10-14
+draft: false
+tags:
+  - machine-learning
+  - data-science
+aliases:
 ---
+
 This note serves a summary and a quick reference of code snippets/recipes outlined in the book.
 
 # Top-level Framework for an End-to-End Machine Learning Project
