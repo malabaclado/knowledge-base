@@ -1,6 +1,11 @@
 ---
 title: Welcome to my digital space!
-date: 4/30/2026
+description:
+date: 2026-04-30
+lastmod: 2026-10-14
+draft: false
+tags:
+aliases:
 ---
 
 Welcome to my digital garden! 
