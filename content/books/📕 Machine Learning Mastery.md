@@ -86,15 +86,39 @@ Feature selection is a process where you automatically select those features in 
 - Improves Accuracy: Less misleading data means modeling accuracy improves.
 - Reduces Training Time: Less data means that algorithms train faster.
 
-Common techniques for feature selection
+**Common techniques for feature selection**
+
 - **Univariate Selection** - **uses statistical tests** (eg. chi-squared test) to select those features that have the strongest relationship with the output variable
 	- The scikit-learn library provides the `SelectKBest` class that can be used with a suite of different statistical tests to select a specific number of features.
 - **Recursive Feature Elimination** - **recursively removes attributes** and builds a model on those attributes that remain
-	- It uses the model accuracy to identify which attributes (and combination of attributes) contribute the most to predicting the target attribute.
-- Principal Component Analysis - Principal Component Analysis (or PCA) uses linear algebra to transform the dataset into a
-compressed form. Generally this is called a data reduction technique. A property of PCA is that
-you can choose the number of dimensions or principal components in the transformed result.
-- Feature Importance
+	- It **uses the model accuracy** to identify which attributes (and combination of attributes) contribute the most to predicting the target attribute.
+- **Principal Component Analysis** - uses linear algebra to transform the dataset into a compressed form. 
+	- Generally this is called a **data reduction technique**. 
+	- A property of PCA is that you can choose the number of dimensions or principal components in the transformed result.
+- **Feature Importance** - uses bagged decision trees (eg. Random Forest and Extra Trees) to estimate the importance of features.
+
+# Evaluate the performance of ML algorithms with Resampling
+
+You need to know how well your algorithms perform on unseen data. The best way to evaluate the performance of an algorithm would be to make predictions for new data to which you already know the answers.
+
+The *second best way* is to use clever techniques from statistics called **resampling methods** that allow you to make accurate estimates for how well your algorithm will perform on new data.
+
+**Common resampling methods for machine learning**
+
+- Train and Test Set Splits
+	- Split the original data set into training and testing data sets (usually at 2:1 ratio).
+	- It is ideal for large datasets (millions of records) where there is strong evidence that both splits of the data are representative of the underlying problem. **Because of the speed, it is useful to use this approach when the algorithm you are investigating is slow to train.**
+	- **A downside of this technique is that it can have a high variance.** This means that differences in the training and test dataset can result in meaningful differences in the estimate of accuracy.
+- k-fold Cross Validation
+	- Use to estimate the performance of a machine learning algorithm with less variance than a single train-test set split.
+	- It works by splitting the dataset into k-parts (e.g. k = 5 or k = 10). Each split of the data is called a fold. The algorithm is trained on k − 1 folds with one held back and tested on the held back fold. This is repeated so that each fold of the dataset is given a chance to be the held back test set. After running cross validation you end up with k different performance scores that you can summarize using a mean and a standard deviation.
+- Leave One Out Cross Validation
+	- You can configure cross validation so that the size of the fold is 1 (k is set to the number of observations in your dataset). This variation of cross validation is called leave-one-out cross validation.
+- Repeated Random Test-Train Splits
+	- Another variation on k-fold cross validation is to create a random split of the data like the train/test split described above, but repeat the process of splitting and evaluation of the algorithm multiple times, like cross validation. 
+	- This has the speed of using a train/test split and the reduction in variance in the estimated performance of k-fold cross validation. 
+	- You can also repeat the process many more times as needed to improve the accuracy. A down side is that repetitions may include much of the same data in the train or the test split from run to run, introducing redundancy into the evaluation.
+
 
 # Code Snippets
 
@@ -233,4 +257,134 @@ fit = rfe.fit(X, Y)
 print("Num Features: %d") % fit.n_features_
 print("Selected Features: %s") % fit.support_
 print("Feature Ranking: %s") % fit.ranking_
+```
+
+## Dimension reduction with PCA
+```python
+# Feature Extraction with PCA
+from pandas import read_csv
+from sklearn.decomposition import PCA
+# load data
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+# feature extraction
+pca = PCA(n_components=3)
+fit = pca.fit(X)
+# summarize components
+print("Explained Variance: %s") % fit.explained_variance_ratio_
+print(fit.components_)
+```
+
+## Feature Importance with Extra Trees Classifier
+
+```python
+# Feature Importance with Extra Trees Classifier
+from pandas import read_csv
+from sklearn.ensemble import ExtraTreesClassifier
+# load data
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+# feature extraction
+model = ExtraTreesClassifier()
+model.fit(X, Y)
+print(model.feature_importances_)
+```
+
+## Evaluate using train-test set
+
+```python
+# Evaluate using a train and a test set
+from pandas import read_csv
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+test_size = 0.33
+seed = 7
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=test_size,
+random_state=seed)
+model = LogisticRegression()
+model.fit(X_train, Y_train)
+result = model.score(X_test, Y_test)
+print("Accuracy: %.3f%%") % (result*100.0)
+```
+
+Remarks:
+- Note that in addition to specifying the size of the split, we also specify the random seed. Because the split of the data is random, we want to ensure that the results are reproducible. 
+- By specifying the random seed we ensure that we get the same random numbers each time we run the code and in turn the same split of data. 
+- This is important if we want to compare this result to the estimated accuracy of another machine learning algorithm or the same algorithm with a different configuration. 
+- To ensure the comparison was apples-for-apples, we must ensure that they are trained and tested on exactly the same data.
+
+## Evaluate using Cross Validation
+
+```python
+# Evaluate using Cross Validation
+from pandas import read_csv
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+num_folds = 10
+seed = 7
+kfold = KFold(n_splits=num_folds, random_state=seed)
+model = LogisticRegression()
+results = cross_val_score(model, X, Y, cv=kfold)
+print("Accuracy: %.3f%% (%.3f%%)") % (results.mean()*100.0, results.std()*100.0)
+```
+
+## Evaluate using Leave One Out Cross Validation
+
+```python
+# Evaluate using Leave One Out Cross Validation
+from pandas import read_csv
+from sklearn.model_selection import LeaveOneOut
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+num_folds = 10
+loocv = LeaveOneOut()
+model = LogisticRegression()
+results = cross_val_score(model, X, Y, cv=loocv)
+print("Accuracy: %.3f%% (%.3f%%)") % (results.mean()*100.0, results.std()*100.0)
+```
+
+## Evaluate using Shuffle Split Cross Validation
+
+```
+# Evaluate using Shuffle Split Cross Validation
+from pandas import read_csv
+from sklearn.model_selection import ShuffleSplit
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+n_splits = 10
+test_size = 0.33
+
 ```
