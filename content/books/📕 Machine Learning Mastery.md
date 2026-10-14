@@ -46,17 +46,23 @@ Here's a great Python code reference for various chart types: [Python Graph Gall
 
 Many machine learning algorithms make assumptions about your data. It is often a very good idea to prepare your data in such way to best expose the structure of the problem to the machine learning algorithms that you intend to use.
 
-Outlined below aCommon pre-processing techniques:
+Outlined below are common pre-processing techniques:
+- **Rescaling** - Rescaling means putting data from varying scales and attributes to the same scale (often in a range from 0 to 1).
+	- This is useful for optimization algorithms used in the core of machine learning algorithms like gradient descent. It is also useful for algorithms that weight inputs like regression and neural networks and algorithms that use distance measures like k-Nearest Neighbors.
+- **Standardizing** - Transforms data with Gaussian distribution with possibly different means and standard deviation to a distribution with a mean of 0 and standard deviation of 1.
+	- It is most suitable for techniques that assume a Gaussian distribution in the input variables and work better with rescaled data, such as linear regression, logistic regression and linear discriminate analysis.
+- **Normalization** - rescaling each observation (row) to have a length of 1 (called a unit norm or a vector with the length of 1 in linear algebra). 
+	- This pre-processing method can be useful for sparse datasets (lots of zeros) with attributes of varying scales when using algorithms that weight input values such as neural networks and algorithms that use distance measures such as k-Nearest Neighbors.
+- **Binarize** - transform your data into binary using a binary threshold. All values above the threshold are marked 1 and all equal to or below are marked as 0.
+	- It can be useful when you have probabilities that you want to make crisp values. It is also useful when feature engineering and you want to add new features that indicate something meaningful.
 
-## Rescaling
-## Standardizing
-## Normalizing
-## Binarize
+# Feature Selection
+
 
 
 # Code Snippets
 
-# Pearwise Pearson Correlation
+## Pearwise Pearson Correlation
 
 ``` python
 # Pairwise Pearson correlations
@@ -71,7 +77,7 @@ correlations = data.corr(method=’pearson’)
 print(correlations)
 ```
 
-# Calculate Skew
+## Calculate Skew
 
 ```python
 # Skew for each attribute
@@ -81,4 +87,66 @@ names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’,
 data = read_csv(filename, names=names)
 skew = data.skew()
 print(skew)
+```
+
+## Rescaling `MinMaxScaler`
+
+```
+# Rescale data (between 0 and 1)
+from pandas import read_csv
+from numpy import set_printoptions
+from sklearn.preprocessing import MinMaxScaler
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+# separate array into input and output components
+X = array[:,0:8]
+Y = array[:,8]
+scaler = MinMaxScaler(feature_range=(0, 1))
+rescaledX = scaler.fit_transform(X)
+# summarize transformed data
+set_printoptions(precision=3)
+```
+
+## Standardizing data with StandardScaler
+
+``` python
+# Standardize data (0 mean, 1 stdev)
+from sklearn.preprocessing import StandardScaler
+from pandas import read_csv
+from numpy import set_printoptions
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+# separate array into input and output components
+X = array[:,0:8]
+Y = array[:,8]
+scaler = StandardScaler().fit(X)
+rescaledX = scaler.transform(X)
+# summarize transformed data
+set_printoptions(precision=3)
+print(rescaledX[0:5,:])
+```
+
+## Normalizing data with `Normalizer`
+
+```python
+# Normalize data (length of 1)
+from sklearn.preprocessing import Normalizer
+from pandas import read_csv
+from numpy import set_printoptions
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+# separate array into input and output components
+X = array[:,0:8]
+Y = array[:,8]
+scaler = Normalizer().fit(X)
+normalizedX = scaler.transform(X)
+# summarize transformed data
+set_printoptions(precision=3)
+print(normalizedX[0:5,:])
 ```
