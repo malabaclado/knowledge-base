@@ -3,7 +3,7 @@ title: Machine Learning Mastery (Jason Brownlee)
 description:
 date: 2026-10-14
 lastmod: 2026-10-14
-draft: true
+draft: false
 tags:
   - machine-learning
   - data-science

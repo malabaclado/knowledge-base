@@ -1,6 +1,17 @@
 I am building my digital garden / knowledge base with Quartz and Obsidian.
 
-Metadata to add for best practice:
+# Previewing the site locally
+
+To preview the site on localhost, open command prompt on root folder and run the following command: 
+
+```
+npm exec build --serve
+```
+
+# Required metadata for posts
+
+When creating new notes, trigger the command "Insert Template" then click on `yaml-frontmatter`.
+
 ```
 ---
 title: "Stationarity and Autoregressive Models"

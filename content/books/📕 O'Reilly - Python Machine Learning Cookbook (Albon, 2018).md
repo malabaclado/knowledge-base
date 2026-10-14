@@ -3,7 +3,7 @@ title: O'Reilly - Python Machine Learning Cookbook (Albon, 2018)
 description:
 date: 2022-07-07
 lastmod: 2026-10-14
-draft: true
+draft: false
 tags:
 aliases:
 ---
