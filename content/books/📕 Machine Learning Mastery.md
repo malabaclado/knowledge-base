@@ -146,7 +146,14 @@ The best advice is to experiment and find a technique for your problem that is f
 - Accuracy = Correct # of Predictions / Total # Predictions Made
 - This is the most common evaluation metric for classification problems, it is also the most misused. **It is really only suitable when there are an equal number of observations in each class (which is rarely the case) and that all predictions and prediction errors are equally important**, which is often not the case.
 ### Logarithmic Loss
+- Logarithmic loss (or logloss) is a performance metric for evaluating the predictions of probabilities of membership to a given class. 
+- The scalar probability between 0 and 1 can be seen as a measure of confidence for a prediction by an algorithm. Predictions that are correct or incorrect are rewarded or punished proportionally to the confidence of the prediction.
 ### Area under ROC Curve
+- Area under ROC Curve (or AUC for short) is a performance metric for binary classification problems. 
+- The AUC represents a model’s ability to discriminate between positive and negative classes. An area of 1.0 represents a model that made all predictions perfectly. An area of 0.5 represents a model that is as good as random. 
+- ROC can be broken down into sensitivity and specificity. A binary classification problem is really a trade-off between sensitivity and specificity.
+	- Sensitivity is the true positive rate also called the recall. It is the number of instances from the positive (first) class that actually predicted correctly.
+	- Specificity is also called the true negative rate. Is the number of instances from the negative (second) class that were actually predicted correctly.
 ### Confusion Matrix
 ### Classification Report
 
@@ -429,4 +436,67 @@ kfold = ShuffleSplit(n_splits=n_splits, test_size=test_size, random_state=seed)
 model = LogisticRegression()
 results = cross_val_score(model, X, Y, cv=kfold)
 print("Accuracy: %.3f%% (%.3f%%)") % (results.mean()*100.0, results.std()*100.0)
+```
+
+## Cross Validation Classification Accuracy
+
+```python
+# Cross Validation Classification Accuracy
+from pandas import read_csv
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+kfold = KFold(n_splits=10, random_state=7)
+model = LogisticRegression()
+scoring = ’accuracy’
+results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
+print("Accuracy: %.3f (%.3f)") % (results.mean(), results.std())
+```
+
+## Cross Validation Classification LogLoss
+
+```python
+# Cross Validation Classification LogLoss
+from pandas import read_csv
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+kfold = KFold(n_splits=10, random_state=7)
+model = LogisticRegression()
+scoring = ’neg_log_loss’
+results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
+print("Logloss: %.3f (%.3f)") % (results.mean(), results.std())
+```
+
+## Cross Validation Classification ROC AUC
+
+```python
+# Cross Validation Classification ROC AUC
+from pandas import read_csv
+from sklearn.model_selection import KFold
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+filename = ’pima-indians-diabetes.data.csv’
+names = [’preg’, ’plas’, ’pres’, ’skin’, ’test’, ’mass’, ’pedi’, ’age’, ’class’]
+dataframe = read_csv(filename, names=names)
+array = dataframe.values
+X = array[:,0:8]
+Y = array[:,8]
+kfold = KFold(n_splits=10, random_state=7)
+model = LogisticRegression()
+scoring = ’roc_auc’
+results = cross_val_score(model, X, Y, cv=kfold, scoring=scoring)
+print("AUC: %.3f (%.3f)") % (results.mean(), results.std())
 ```
