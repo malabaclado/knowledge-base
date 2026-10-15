@@ -146,7 +146,7 @@ The best advice is to experiment and find a technique for your problem that is f
 - Accuracy = Correct # of Predictions / Total # Predictions Made
 - This is the most common evaluation metric for classification problems, it is also the most misused. **It is really only suitable when there are an equal number of observations in each class (which is rarely the case) and that all predictions and prediction errors are equally important**, which is often not the case.
 ### Logarithmic Loss
-- Logarithmic loss (or logloss) is a performance metric for evaluating the predictions of probabilities of membership to a given class. 
+- Logarithmic loss (or `logloss`) is a performance metric for evaluating the predictions of probabilities of membership to a given class. 
 - The scalar probability between 0 and 1 can be seen as a measure of confidence for a prediction by an algorithm. Predictions that are correct or incorrect are rewarded or punished proportionally to the confidence of the prediction.
 ### Area under ROC Curve
 - Area under ROC Curve (or AUC for short) is a performance metric for binary classification problems. 
@@ -156,6 +156,13 @@ The best advice is to experiment and find a technique for your problem that is f
 	- Specificity is also called the true negative rate. Is the number of instances from the negative (second) class that were actually predicted correctly.
 ### Confusion Matrix
 ### Classification Report
+
+## Common Regression Metrics
+
+### Mean Absolute Error
+### Mean Squared Error
+### $R^2$
+
 
 
 
