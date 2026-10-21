@@ -23,7 +23,7 @@ aliases: Coursera Google Data Analytics
 
 - [[Google Capstone Project - Bellabeat]]
 
-# Revision Notes
+# Course Notes
 - [[Google Data Analytics 1 - Foundations]]
 - [[Google Data Analytics 2 - Ask Questions to Make Data-Driven Decisions]]
 - [[Google Data Analytics 3 - Prepare Data for Exploration]]

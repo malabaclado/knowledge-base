@@ -1,5 +1,5 @@
 ---
-title: Studies
+title: studies
 description:
 date:
 lastmod:
