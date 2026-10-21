@@ -15,4 +15,4 @@ This is a map-of-content (MOC) for all my studies, including notes from my under
 
 
 # Certifications
-[[google-data analytics-moc]]
+[[google-data analytics-moc|Coursera Google Data Analytics]]

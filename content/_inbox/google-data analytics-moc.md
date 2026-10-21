@@ -8,7 +8,7 @@ description:
 date:
 lastmod:
 draft: false
-aliases:
+aliases: Coursera Google Data Analytics
 ---
 
 
