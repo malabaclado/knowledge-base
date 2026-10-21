@@ -5,7 +5,7 @@ I am building my digital garden / knowledge base with Quartz and Obsidian.
 To preview the site on localhost, open command prompt on root folder and run the following command: 
 
 ```
-npm exec build --serve
+npx quartz build --serve
 ```
 
 # Required metadata for posts

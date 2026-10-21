@@ -1,7 +1,14 @@
 ---
 tags:
   - type/course-note
+title: Ultimate SQL Course (Data with Baraa)
+description:
+date:
+lastmod:
+draft: false
+aliases:
 ---
+
 # Joins and Set
 
 ![](https://i.imgur.com/2k0OvhU.png)

@@ -1,5 +1,5 @@
 ---
-title: content
+title: maps of content
 description:
 date: 
 lastmod: 
