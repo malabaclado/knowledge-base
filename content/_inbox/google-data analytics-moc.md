@@ -1,7 +1,5 @@
 ---
 tags: type/moc
-alias:
-  - Google Data Analytics
 creation-date: Thursday 27th April 2023
 title: Coursera Google Data Analytics MOC
 description:
